@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" id="html" class="bg-gray-600">
+<head>
+    <meta charset="UTF-8">
+    <title>Louietje</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src="js/hide.js"></script>
+    <!-- In part inspired by https://css-tricks.com/how-to-make-a-css-only-carousel/ -->
+</head>
+<body class="babyBackground text-gray-200">
+
+<div class="hidden" id="resume">
+    <button id="togglePageButtonWork" class="togglePageButton">
+        <i class="fa-solid fa-baby"></i>
+    </button>
+    <div id="resumeWrapper" class="bg-grey-700 max-w-4xl flex items-center h-auto flex-wrap mx-auto my-32">
+    <!--Main Col-->
+    <div id="profile" class="w-full shadow-2xl bg-gray-900 opacity-75 mx-6 ">
+        <div class="relative top-0 right-0 h-12 w-18 p-4">
+            <button id="themeChanger" class="focus:outline-none">☀️</button>
+        </div>
+        <div class="p-4 md:p-12 text-center ">
+            <!-- Pin to top right corner -->
+            <!-- Image for mobile view-->
+            <div class="block rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+                 style="background-image: url('resumeImages/me.jpeg')"></div>
+
+            <h1 class="text-3xl font-bold pt-8 ">P. De Bleye</h1>
+            <div class="mx-auto  w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+            <p class="pt-4 text-base font-bold flex items-center justify-center ">
+                <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 20 20">
+                    <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
+                </svg>
+                Dev ops & back-end developer
+            </p>
+            <p class="pt-2 text-gray-600 text-xs flex items-center justify-center ">
+                <svg class="h-4 fill-current text-green-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 20 20">
+                    <path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"/>
+                </svg>
+                Belgium & China
+            </p>
+            <div class="grid grid-cols-3">
+                <div class="pt-8 text-sm">
+                    <p class="pt-3 text-base font-bold flex items-center justify-center">
+                        <i class="fa-solid fa-toolbox"></i>&nbsp;Toolbox
+                    </p>
+                    <p class="w-full">
+                        <a title="AWS" href="https://aws.amazon.com/" target="_blank"><i
+                                class="fa-brands fa-aws"></i></a>
+                    </p>
+                    <p class="w-full">
+                        <a title="Ubuntu" href="https://ubuntu.com/" target="_blank"><i
+                                class="fa-brands fa-ubuntu"></i></a>
+                    </p>
+                    <p class="w-full">
+                        <a title="Docker" href="https://www.docker.com/" target="_blank"><i
+                                class="fa-brands fa-docker"></i></a>
+                    </p>
+                    <p class="w-full">
+                        <a title="MySql" href="https://www.mysql.com/" target="_blank">MySql</a>
+                    </p>
+                    <p class="w-full">
+                        <a title="Redis" href="https://redis.io/" target="_blank">Redis</a>
+                    </p>
+                </div>
+                <div class="pt-8 text-sm">
+                    <p class="pt-3 text-base font-bold flex items-center justify-center">
+                        <i class="fa-solid fa-language"></i>&nbsp;Language
+                    </p>
+                    <p class="w-full">
+                        <a title="php" href="https://www.php.net/" target="_blank"><i class="fa-brands fa-php"></i></a>
+                    </p>
+                    <p class="w-full">
+                        <i title="Html5" class="fa-brands fa-html5"></i>
+                    </p>
+                    <p class="w-full">
+                        <i title="Javascript" class="fa-brands fa-js"></i>
+                    </p>
+                    <p class="w-full">
+                        <i title="css3" class="fa-brands fa-css3-alt"></i>
+                    </p>
+                </div>
+                <div class="pt-8 text-sm">
+                    <p class="pt-3 text-base font-bold flex items-center justify-center">
+                        <i class="fa-solid fa-trowel-bricks"></i>&nbsp;Building blocks
+                    </p>
+                    <p class="w-full">
+                        <i title="Laravel" class="fa-brands fa-laravel"></i>
+                    </p>
+                    <p class="w-full">
+                        <i title="VueJs" class="fa-brands fa-vuejs"></i>
+                    </p>
+                    <p class="w-full">
+                        <i title="Symfony" class="fa-brands fa-symfony"></i>
+                    </p>
+                    <p class="w-full">
+                        <i title="Angular" class="fa-brands fa-angular"></i>
+                    </p>
+                    <p class="w-full">
+                        <i title="ReactJs" class="fa-brands fa-react"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="pt-12 pb-8">
+                <a href="https://www.linkedin.com/in/peterdebleye/"
+                   class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                    Get In Touch
+                </a>
+            </div>
+
+            <div class="mt-6 pb-16 w-4/5 mx-auto flex flex-wrap items-center justify-end">
+                <a target="_blank" class="link p-3" href="https://github.com/smoggert"
+                   data-tippy-content="@smoggert"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" class="link p-3" href="https://www.linkedin.com/in/peterdebleye/"
+                   data-tippy-content="@peterdebleye"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="wrapper" id="photos">
+    <button id="togglePageButtonBaby" class="togglePageButton">
+        <i class="fa-solid fa-toolbox"></i>
+    </button>
+    <nav class="lil-nav">
+        <a href="#image-0"><img class="lil-nav__img" src="images/DM5A9632.JPG" alt="Louie 0" /></a>
+
+        <a href="#image-1"><img class="lil-nav__img" src="images/DM5A9633.JPG" alt="Louie 1" /></a>
+
+        <a href="#image-2"><img class="lil-nav__img" src="images/DM5A9635.JPG" alt="Louie 2" /></a>
+
+        <a href="#image-3"><img class="lil-nav__img" src="images/DM5A9637.JPG" alt="Louie 3" /></a>
+
+        <a href="#image-4"><img class="lil-nav__img" src="images/DM5A9638.JPG" alt="Louie 4" /></a>
+
+        <a href="#image-5"><img class="lil-nav__img" src="images/DM5A9639.JPG" alt="Louie 5" /></a>
+
+        <a href="#image-6"><img class="lil-nav__img" src="images/DM5A9640.JPG" alt="Louie 6" /></a>
+
+        <a href="#image-7"><img class="lil-nav__img" src="images/DM5A9641.JPG" alt="Louie 7" /></a>
+
+        <a href="#image-8"><img class="lil-nav__img" src="images/DM5A9642.JPG" alt="Louie 8" /></a>
+
+        <a href="#image-9"><img class="lil-nav__img" src="images/DM5A9644.JPG" alt="Louie 9" /></a>
+
+        <a href="#image-10"><img class="lil-nav__img" src="images/DM5A9645.JPG" alt="Louie 10" /></a>
+
+        <a href="#image-11"><img class="lil-nav__img" src="images/DM5A9646.JPG" alt="Louie 11" /></a>
+
+        <a href="#image-12"><img class="lil-nav__img" src="images/DM5A9649.JPG" alt="Louie 12" /></a>
+
+        <a href="#image-13"><img class="lil-nav__img" src="images/DM5A9650.JPG" alt="Louie 13" /></a>
+
+        <a href="#image-14"><img class="lil-nav__img" src="images/DM5A9651.JPG" alt="Louie 14" /></a>
+
+        <a href="#image-15"><img class="lil-nav__img" src="images/DM5A9652.JPG" alt="Louie 15" /></a>
+
+        <a href="#image-16"><img class="lil-nav__img" src="images/DM5A9654.JPG" alt="Louie 16" /></a>
+
+        <a href="#image-17"><img class="lil-nav__img" src="images/DM5A9655.JPG" alt="Louie 17" /></a>
+
+        <a href="#image-18"><img class="lil-nav__img" src="images/DM5A9657.JPG" alt="Louie 18" /></a>
+
+        <a href="#image-19"><img class="lil-nav__img" src="images/DM5A9658.JPG" alt="Louie 19" /></a>
+
+        <a href="#image-20"><img class="lil-nav__img" src="images/DM5A9660.JPG" alt="Louie 20" /></a>
+
+        <a href="#image-21"><img class="lil-nav__img" src="images/DM5A9663.JPG" alt="Louie 21" /></a>
+
+        <a href="#image-22"><img class="lil-nav__img" src="images/DM5A9664.JPG" alt="Louie 22" /></a>
+
+        <a href="#image-23"><img class="lil-nav__img" src="images/DM5A9666.JPG" alt="Louie 23" /></a>
+
+        <a href="#image-24"><img class="lil-nav__img" src="images/DM5A9668.JPG" alt="Louie 24" /></a>
+
+        <a href="#image-25"><img class="lil-nav__img" src="images/DM5A9672.JPG" alt="Louie 25" /></a>
+
+        <a href="#image-26"><img class="lil-nav__img" src="images/DM5A9673.JPG" alt="Louie 26" /></a>
+
+        <a href="#image-27"><img class="lil-nav__img" src="images/DM5A9676.JPG" alt="Louie 27" /></a>
+
+        <a href="#image-28"><img class="lil-nav__img" src="images/DM5A9677.JPG" alt="Louie 28" /></a>
+
+        <a href="#image-29"><img class="lil-nav__img" src="images/DM5A9678.JPG" alt="Louie 29" /></a>
+
+        <a href="#image-30"><img class="lil-nav__img" src="images/DM5A9679.JPG" alt="Louie 30" /></a>
+
+        <a href="#image-31"><img class="lil-nav__img" src="images/DM5A9682.JPG" alt="Louie 31" /></a>
+
+        <a href="#image-32"><img class="lil-nav__img" src="images/DM5A9683.JPG" alt="Louie 32" /></a>
+
+        <a href="#image-33"><img class="lil-nav__img" src="images/DM5A9686.JPG" alt="Louie 33" /></a>
+
+        <a href="#image-34"><img class="lil-nav__img" src="images/DM5A9690.JPG" alt="Louie 34" /></a>
+
+        <a href="#image-35"><img class="lil-nav__img" src="images/DM5A9692.JPG" alt="Louie 35" /></a>
+
+        <a href="#image-36"><img class="lil-nav__img" src="images/DM5A9694.JPG" alt="Louie 36" /></a>
+
+        <a href="#image-37"><img class="lil-nav__img" src="images/DM5A9695.JPG" alt="Louie 37" /></a>
+
+        <a href="#image-38"><img class="lil-nav__img" src="images/DM5A9697.JPG" alt="Louie 38" /></a>
+
+        <a href="#image-39"><img class="lil-nav__img" src="images/DM5A9700.JPG" alt="Louie 39" /></a>
+
+        <a href="#image-40"><img class="lil-nav__img" src="images/DM5A9701.JPG" alt="Louie 40" /></a>
+
+        <a href="#image-41"><img class="lil-nav__img" src="images/DM5A9702.JPG" alt="Louie 41" /></a>
+
+        <a href="#image-42"><img class="lil-nav__img" src="images/DM5A9705.JPG" alt="Louie 42" /></a>
+
+        <a href="#image-43"><img class="lil-nav__img" src="images/DM5A9706.JPG" alt="Louie 43" /></a>
+
+        <a href="#image-44"><img class="lil-nav__img" src="images/DM5A9707.JPG" alt="Louie 44" /></a>
+
+        <a href="#image-45"><img class="lil-nav__img" src="images/DM5A9710.JPG" alt="Louie 45" /></a>
+
+        <a href="#image-46"><img class="lil-nav__img" src="images/DM5A9711.JPG" alt="Louie 46" /></a>
+
+        <a href="#image-47"><img class="lil-nav__img" src="images/DM5A9713.JPG" alt="Louie 47" /></a>
+
+        <a href="#image-48"><img class="lil-nav__img" src="images/DM5A9715.JPG" alt="Louie 48" /></a>
+
+        <a href="#image-49"><img class="lil-nav__img" src="images/DM5A9716.JPG" alt="Louie 49" /></a>
+
+        <a href="#image-50"><img class="lil-nav__img" src="images/DM5A9718.JPG" alt="Louie 50" /></a>
+
+        <a href="#image-51"><img class="lil-nav__img" src="images/DM5A9719.JPG" alt="Louie 51" /></a>
+
+        <a href="#image-52"><img class="lil-nav__img" src="images/DM5A9720.JPG" alt="Louie 52" /></a>
+
+        <a href="#image-53"><img class="lil-nav__img" src="images/DM5A9722.JPG" alt="Louie 53" /></a>
+
+        <a href="#image-54"><img class="lil-nav__img" src="images/DM5A9724.JPG" alt="Louie 54" /></a>
+
+        <a href="#image-55"><img class="lil-nav__img" src="images/DM5A9726.JPG" alt="Louie 55" /></a>
+
+        <a href="#image-56"><img class="lil-nav__img" src="images/DM5A9728.JPG" alt="Louie 56" /></a>
+
+        <a href="#image-57"><img class="lil-nav__img" src="images/DM5A9733.JPG" alt="Louie 57" /></a>
+
+        <a href="#image-58"><img class="lil-nav__img" src="images/DM5A9734.JPG" alt="Louie 58" /></a>
+
+        <a href="#image-59"><img class="lil-nav__img" src="images/DM5A9735.JPG" alt="Louie 59" /></a>
+
+        <a href="#image-60"><img class="lil-nav__img" src="images/DM5A9736.JPG" alt="Louie 60" /></a>
+
+        <a href="#image-61"><img class="lil-nav__img" src="images/DM5A9737.JPG" alt="Louie 61" /></a>
+
+        <a href="#image-62"><img class="lil-nav__img" src="images/DM5A9739.JPG" alt="Louie 62" /></a>
+
+        <a href="#image-63"><img class="lil-nav__img" src="images/DM5A9740.JPG" alt="Louie 63" /></a>
+
+        <a href="#image-64"><img class="lil-nav__img" src="images/DM5A9741.JPG" alt="Louie 64" /></a>
+
+        <a href="#image-65"><img class="lil-nav__img" src="images/DM5A9742.JPG" alt="Louie 65" /></a>
+
+        <a href="#image-66"><img class="lil-nav__img" src="images/DM5A9744.JPG" alt="Louie 66" /></a>
+
+        <a href="#image-67"><img class="lil-nav__img" src="images/DM5A9750.JPG" alt="Louie 67" /></a>
+
+        <a href="#image-68"><img class="lil-nav__img" src="images/DM5A9752.JPG" alt="Louie 68" /></a>
+
+        <a href="#image-69"><img class="lil-nav__img" src="images/DM5A9754.JPG" alt="Louie 69" /></a>
+
+        <a href="#image-70"><img class="lil-nav__img" src="images/DM5A9756.JPG" alt="Louie 70" /></a>
+
+        <a href="#image-71"><img class="lil-nav__img" src="images/DM5A9758.JPG" alt="Louie 71" /></a>
+
+        <a href="#image-72"><img class="lil-nav__img" src="images/DM5A9759.JPG" alt="Louie 72" /></a>
+
+        <a href="#image-73"><img class="lil-nav__img" src="images/DM5A9761.JPG" alt="Louie 73" /></a>
+
+        <a href="#image-74"><img class="lil-nav__img" src="images/DM5A9762.JPG" alt="Louie 74" /></a>
+
+        <a href="#image-75"><img class="lil-nav__img" src="images/DM5A9763.JPG" alt="Louie 75" /></a>
+
+        <a href="#image-76"><img class="lil-nav__img" src="images/DM5A9766.JPG" alt="Louie 76" /></a>
+
+        <a href="#image-77"><img class="lil-nav__img" src="images/DM5A9769.JPG" alt="Louie 77" /></a>
+
+        <a href="#image-78"><img class="lil-nav__img" src="images/DM5A9770.JPG" alt="Louie 78" /></a>
+
+        <a href="#image-79"><img class="lil-nav__img" src="images/DM5A9772.JPG" alt="Louie 79" /></a>
+
+        <a href="#image-80"><img class="lil-nav__img" src="images/DM5A9774.JPG" alt="Louie 80" /></a>
+
+        <a href="#image-81"><img class="lil-nav__img" src="images/DM5A9775.JPG" alt="Louie 81" /></a>
+
+        <a href="#image-82"><img class="lil-nav__img" src="images/DM5A9777.JPG" alt="Louie 82" /></a>
+
+        <a href="#image-83"><img class="lil-nav__img" src="images/DM5A9779.JPG" alt="Louie 83" /></a>
+
+        <a href="#image-84"><img class="lil-nav__img" src="images/DM5A9781.JPG" alt="Louie 84" /></a>
+
+        <a href="#image-85"><img class="lil-nav__img" src="images/DM5A9782.JPG" alt="Louie 85" /></a>
+
+        <a href="#image-86"><img class="lil-nav__img" src="images/DM5A9783.JPG" alt="Louie 86" /></a>
+
+        <a href="#image-87"><img class="lil-nav__img" src="images/DM5A9786.JPG" alt="Louie 87" /></a>
+
+        <a href="#image-88"><img class="lil-nav__img" src="images/DM5A9789.JPG" alt="Louie 88" /></a>
+
+        <a href="#image-89"><img class="lil-nav__img" src="images/DM5A9790.JPG" alt="Louie 89" /></a>
+
+        <a href="#image-90"><img class="lil-nav__img" src="images/DM5A9792.JPG" alt="Louie 90" /></a>
+
+        <a href="#image-91"><img class="lil-nav__img" src="images/DM5A9793.JPG" alt="Louie 91" /></a>
+
+        <a href="#image-92"><img class="lil-nav__img" src="images/DM5A9794.JPG" alt="Louie 92" /></a>
+
+        <a href="#image-93"><img class="lil-nav__img" src="images/DM5A9797.JPG" alt="Louie 93" /></a>
+
+        <a href="#image-94"><img class="lil-nav__img" src="images/DM5A9799.JPG" alt="Louie 94" /></a>
+
+        <a href="#image-95"><img class="lil-nav__img" src="images/DM5A9800.JPG" alt="Louie 95" /></a>
+
+        <a href="#image-96"><img class="lil-nav__img" src="images/DM5A9803.JPG" alt="Louie 96" /></a>
+
+        <a href="#image-97"><img class="lil-nav__img" src="images/DM5A9805.JPG" alt="Louie 97" /></a>
+
+        <a href="#image-98"><img class="lil-nav__img" src="images/DM5A9806.JPG" alt="Louie 98" /></a>
+
+        <a href="#image-99"><img class="lil-nav__img" src="images/DM5A9809.JPG" alt="Louie 99" /></a>
+
+        <a href="#image-100"><img class="lil-nav__img" src="images/DM5A9810.JPG" alt="Louie 100" /></a>
+
+        <a href="#image-101"><img class="lil-nav__img" src="images/DM5A9811.JPG" alt="Louie 101" /></a>
+
+        <a href="#image-102"><img class="lil-nav__img" src="images/DM5A9815.JPG" alt="Louie 102" /></a>
+
+        <a href="#image-103"><img class="lil-nav__img" src="images/DM5A9819.JPG" alt="Louie 103" /></a>
+
+        <a href="#image-104"><img class="lil-nav__img" src="images/DM5A9822.JPG" alt="Louie 104" /></a>
+
+        <a href="#image-105"><img class="lil-nav__img" src="images/DM5A9825.JPG" alt="Louie 105" /></a>
+    </nav>
+    <div class="gallery">
+        <img class="gallery__img" id="image-0" src="images/DM5A9632.JPG" alt="Louie 0" />
+
+        <img class="gallery__img" id="image-1" src="images/DM5A9633.JPG" alt="Louie 1" />
+
+        <img class="gallery__img" id="image-2" src="images/DM5A9635.JPG" alt="Louie 2" />
+
+        <img class="gallery__img" id="image-3" src="images/DM5A9637.JPG" alt="Louie 3" />
+
+        <img class="gallery__img" id="image-4" src="images/DM5A9638.JPG" alt="Louie 4" />
+
+        <img class="gallery__img" id="image-5" src="images/DM5A9639.JPG" alt="Louie 5" />
+
+        <img class="gallery__img" id="image-6" src="images/DM5A9640.JPG" alt="Louie 6" />
+
+        <img class="gallery__img" id="image-7" src="images/DM5A9641.JPG" alt="Louie 7" />
+
+        <img class="gallery__img" id="image-8" src="images/DM5A9642.JPG" alt="Louie 8" />
+
+        <img class="gallery__img" id="image-9" src="images/DM5A9644.JPG" alt="Louie 9" />
+
+        <img class="gallery__img" id="image-10" src="images/DM5A9645.JPG" alt="Louie 10" />
+
+        <img class="gallery__img" id="image-11" src="images/DM5A9646.JPG" alt="Louie 11" />
+
+        <img class="gallery__img" id="image-12" src="images/DM5A9649.JPG" alt="Louie 12" />
+
+        <img class="gallery__img" id="image-13" src="images/DM5A9650.JPG" alt="Louie 13" />
+
+        <img class="gallery__img" id="image-14" src="images/DM5A9651.JPG" alt="Louie 14" />
+
+        <img class="gallery__img" id="image-15" src="images/DM5A9652.JPG" alt="Louie 15" />
+
+        <img class="gallery__img" id="image-16" src="images/DM5A9654.JPG" alt="Louie 16" />
+
+        <img class="gallery__img" id="image-17" src="images/DM5A9655.JPG" alt="Louie 17" />
+
+        <img class="gallery__img" id="image-18" src="images/DM5A9657.JPG" alt="Louie 18" />
+
+        <img class="gallery__img" id="image-19" src="images/DM5A9658.JPG" alt="Louie 19" />
+
+        <img class="gallery__img" id="image-20" src="images/DM5A9660.JPG" alt="Louie 20" />
+
+        <img class="gallery__img" id="image-21" src="images/DM5A9663.JPG" alt="Louie 21" />
+
+        <img class="gallery__img" id="image-22" src="images/DM5A9664.JPG" alt="Louie 22" />
+
+        <img class="gallery__img" id="image-23" src="images/DM5A9666.JPG" alt="Louie 23" />
+
+        <img class="gallery__img" id="image-24" src="images/DM5A9668.JPG" alt="Louie 24" />
+
+        <img class="gallery__img" id="image-25" src="images/DM5A9672.JPG" alt="Louie 25" />
+
+        <img class="gallery__img" id="image-26" src="images/DM5A9673.JPG" alt="Louie 26" />
+
+        <img class="gallery__img" id="image-27" src="images/DM5A9676.JPG" alt="Louie 27" />
+
+        <img class="gallery__img" id="image-28" src="images/DM5A9677.JPG" alt="Louie 28" />
+
+        <img class="gallery__img" id="image-29" src="images/DM5A9678.JPG" alt="Louie 29" />
+
+        <img class="gallery__img" id="image-30" src="images/DM5A9679.JPG" alt="Louie 30" />
+
+        <img class="gallery__img" id="image-31" src="images/DM5A9682.JPG" alt="Louie 31" />
+
+        <img class="gallery__img" id="image-32" src="images/DM5A9683.JPG" alt="Louie 32" />
+
+        <img class="gallery__img" id="image-33" src="images/DM5A9686.JPG" alt="Louie 33" />
+
+        <img class="gallery__img" id="image-34" src="images/DM5A9690.JPG" alt="Louie 34" />
+
+        <img class="gallery__img" id="image-35" src="images/DM5A9692.JPG" alt="Louie 35" />
+
+        <img class="gallery__img" id="image-36" src="images/DM5A9694.JPG" alt="Louie 36" />
+
+        <img class="gallery__img" id="image-37" src="images/DM5A9695.JPG" alt="Louie 37" />
+
+        <img class="gallery__img" id="image-38" src="images/DM5A9697.JPG" alt="Louie 38" />
+
+        <img class="gallery__img" id="image-39" src="images/DM5A9700.JPG" alt="Louie 39" />
+
+        <img class="gallery__img" id="image-40" src="images/DM5A9701.JPG" alt="Louie 40" />
+
+        <img class="gallery__img" id="image-41" src="images/DM5A9702.JPG" alt="Louie 41" />
+
+        <img class="gallery__img" id="image-42" src="images/DM5A9705.JPG" alt="Louie 42" />
+
+        <img class="gallery__img" id="image-43" src="images/DM5A9706.JPG" alt="Louie 43" />
+
+        <img class="gallery__img" id="image-44" src="images/DM5A9707.JPG" alt="Louie 44" />
+
+        <img class="gallery__img" id="image-45" src="images/DM5A9710.JPG" alt="Louie 45" />
+
+        <img class="gallery__img" id="image-46" src="images/DM5A9711.JPG" alt="Louie 46" />
+
+        <img class="gallery__img" id="image-47" src="images/DM5A9713.JPG" alt="Louie 47" />
+
+        <img class="gallery__img" id="image-48" src="images/DM5A9715.JPG" alt="Louie 48" />
+
+        <img class="gallery__img" id="image-49" src="images/DM5A9716.JPG" alt="Louie 49" />
+
+        <img class="gallery__img" id="image-50" src="images/DM5A9718.JPG" alt="Louie 50" />
+
+        <img class="gallery__img" id="image-51" src="images/DM5A9719.JPG" alt="Louie 51" />
+
+        <img class="gallery__img" id="image-52" src="images/DM5A9720.JPG" alt="Louie 52" />
+
+        <img class="gallery__img" id="image-53" src="images/DM5A9722.JPG" alt="Louie 53" />
+
+        <img class="gallery__img" id="image-54" src="images/DM5A9724.JPG" alt="Louie 54" />
+
+        <img class="gallery__img" id="image-55" src="images/DM5A9726.JPG" alt="Louie 55" />
+
+        <img class="gallery__img" id="image-56" src="images/DM5A9728.JPG" alt="Louie 56" />
+
+        <img class="gallery__img" id="image-57" src="images/DM5A9733.JPG" alt="Louie 57" />
+
+        <img class="gallery__img" id="image-58" src="images/DM5A9734.JPG" alt="Louie 58" />
+
+        <img class="gallery__img" id="image-59" src="images/DM5A9735.JPG" alt="Louie 59" />
+
+        <img class="gallery__img" id="image-60" src="images/DM5A9736.JPG" alt="Louie 60" />
+
+        <img class="gallery__img" id="image-61" src="images/DM5A9737.JPG" alt="Louie 61" />
+
+        <img class="gallery__img" id="image-62" src="images/DM5A9739.JPG" alt="Louie 62" />
+
+        <img class="gallery__img" id="image-63" src="images/DM5A9740.JPG" alt="Louie 63" />
+
+        <img class="gallery__img" id="image-64" src="images/DM5A9741.JPG" alt="Louie 64" />
+
+        <img class="gallery__img" id="image-65" src="images/DM5A9742.JPG" alt="Louie 65" />
+
+        <img class="gallery__img" id="image-66" src="images/DM5A9744.JPG" alt="Louie 66" />
+
+        <img class="gallery__img" id="image-67" src="images/DM5A9750.JPG" alt="Louie 67" />
+
+        <img class="gallery__img" id="image-68" src="images/DM5A9752.JPG" alt="Louie 68" />
+
+        <img class="gallery__img" id="image-69" src="images/DM5A9754.JPG" alt="Louie 69" />
+
+        <img class="gallery__img" id="image-70" src="images/DM5A9756.JPG" alt="Louie 70" />
+
+        <img class="gallery__img" id="image-71" src="images/DM5A9758.JPG" alt="Louie 71" />
+
+        <img class="gallery__img" id="image-72" src="images/DM5A9759.JPG" alt="Louie 72" />
+
+        <img class="gallery__img" id="image-73" src="images/DM5A9761.JPG" alt="Louie 73" />
+
+        <img class="gallery__img" id="image-74" src="images/DM5A9762.JPG" alt="Louie 74" />
+
+        <img class="gallery__img" id="image-75" src="images/DM5A9763.JPG" alt="Louie 75" />
+
+        <img class="gallery__img" id="image-76" src="images/DM5A9766.JPG" alt="Louie 76" />
+
+        <img class="gallery__img" id="image-77" src="images/DM5A9769.JPG" alt="Louie 77" />
+
+        <img class="gallery__img" id="image-78" src="images/DM5A9770.JPG" alt="Louie 78" />
+
+        <img class="gallery__img" id="image-79" src="images/DM5A9772.JPG" alt="Louie 79" />
+
+        <img class="gallery__img" id="image-80" src="images/DM5A9774.JPG" alt="Louie 80" />
+
+        <img class="gallery__img" id="image-81" src="images/DM5A9775.JPG" alt="Louie 81" />
+
+        <img class="gallery__img" id="image-82" src="images/DM5A9777.JPG" alt="Louie 82" />
+
+        <img class="gallery__img" id="image-83" src="images/DM5A9779.JPG" alt="Louie 83" />
+
+        <img class="gallery__img" id="image-84" src="images/DM5A9781.JPG" alt="Louie 84" />
+
+        <img class="gallery__img" id="image-85" src="images/DM5A9782.JPG" alt="Louie 85" />
+
+        <img class="gallery__img" id="image-86" src="images/DM5A9783.JPG" alt="Louie 86" />
+
+        <img class="gallery__img" id="image-87" src="images/DM5A9786.JPG" alt="Louie 87" />
+
+        <img class="gallery__img" id="image-88" src="images/DM5A9789.JPG" alt="Louie 88" />
+
+        <img class="gallery__img" id="image-89" src="images/DM5A9790.JPG" alt="Louie 89" />
+
+        <img class="gallery__img" id="image-90" src="images/DM5A9792.JPG" alt="Louie 90" />
+
+        <img class="gallery__img" id="image-91" src="images/DM5A9793.JPG" alt="Louie 91" />
+
+        <img class="gallery__img" id="image-92" src="images/DM5A9794.JPG" alt="Louie 92" />
+
+        <img class="gallery__img" id="image-93" src="images/DM5A9797.JPG" alt="Louie 93" />
+
+        <img class="gallery__img" id="image-94" src="images/DM5A9799.JPG" alt="Louie 94" />
+
+        <img class="gallery__img" id="image-95" src="images/DM5A9800.JPG" alt="Louie 95" />
+
+        <img class="gallery__img" id="image-96" src="images/DM5A9803.JPG" alt="Louie 96" />
+
+        <img class="gallery__img" id="image-97" src="images/DM5A9805.JPG" alt="Louie 97" />
+
+        <img class="gallery__img" id="image-98" src="images/DM5A9806.JPG" alt="Louie 98" />
+
+        <img class="gallery__img" id="image-99" src="images/DM5A9809.JPG" alt="Louie 99" />
+
+        <img class="gallery__img" id="image-100" src="images/DM5A9810.JPG" alt="Louie 100" />
+
+        <img class="gallery__img" id="image-101" src="images/DM5A9811.JPG" alt="Louie 101" />
+
+        <img class="gallery__img" id="image-102" src="images/DM5A9815.JPG" alt="Louie 102" />
+
+        <img class="gallery__img" id="image-103" src="images/DM5A9819.JPG" alt="Louie 103" />
+
+        <img class="gallery__img" id="image-104" src="images/DM5A9822.JPG" alt="Louie 104" />
+
+        <img class="gallery__img" id="image-105" src="images/DM5A9825.JPG" alt="Louie 105" />
+    </div>
+</div>
+</body>
+</html>
