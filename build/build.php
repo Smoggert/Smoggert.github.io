@@ -1,7 +1,10 @@
 <?php
 
+const IMAGE_DIRECTORY = __DIR__ . '/../images/';
+const OUTPUT_DIRECTORY = __DIR__ . '/../';
+
 $images = array_values(array_diff(
-    scandir(__DIR__ . '/images/'),
+    scandir(IMAGE_DIRECTORY),
     ['.','..']
 ));
 $html = <<<HTML
@@ -10,11 +13,11 @@ $html = <<<HTML
 <head>
     <meta charset="UTF-8">
     <title>Louietje</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<script src="js/hide.js"></script>
+	<script src="../js/hide.js"></script>
     <!-- In part inspired by https://css-tricks.com/how-to-make-a-css-only-carousel/ -->
 </head>
 <body class="babyBackground text-gray-200">
@@ -33,7 +36,7 @@ $html = <<<HTML
             <!-- Pin to top right corner -->
             <!-- Image for mobile view-->
             <div class="block rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
-                 style="background-image: url('resumeImages/me.jpeg')"></div>
+                 style="background-image: url('../resumeImages/me.jpeg')"></div>
 
             <h1 class="text-3xl font-bold pt-8 ">P. De Bleye</h1>
             <div class="mx-auto  w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
@@ -163,5 +166,7 @@ $html .= <<<HTML
 </html>
 HTML;
 
-touch('index.html');
-file_put_contents('index.html', $html);
+$target = OUTPUT_DIRECTORY . 'index.html';
+touch($target);
+file_put_contents($target, $html);
+shell_exec("sass style.scss ./../style.css");
