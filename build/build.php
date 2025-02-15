@@ -157,7 +157,7 @@ $html = <<<HTML
     <footer class="p-4 md:p-12 text-center w-screen
                     absolute bottom-0 left-0
                     lg:static lg:bottom-auto lg:left-auto">
-            © Peter De Bleye 2025
+            © 2025 - Peter De Bleye
     </footer>
     </div>
 </div>
