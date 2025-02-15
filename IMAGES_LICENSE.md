@@ -89,7 +89,7 @@ Royalty Free Image and Film License Agreement
 
 THIS IS A LEGAL AGREEMENT BETWEEN THE LICENSEE (AS DEFINED BELOW) AND THE LICENSOR (AS DEFINED BELOW). THIS AGREEMENT APPLIES TO CERTAIN LICENSES ISSUED VIA THE PHOTOSHELTER.COM WEBSITE (THE “SITE”), AND IS APPLICABLE TO ONLINE, DIGITAL AND ANALOGUE (PHYSICAL) DELIVERY OF LICENSED MATERIAL (THE “AGREEMENT”). THE LICENSOR AND LICENSEE HEREBY ACKNOWLEDGE AND AGREE THAT NEITHER THE SITE NOR ITS OWNER, BITSHELTER, LLC (COLLECTIVELY, “PHOTOSHELTER”), IS A PARTY TO THIS AGREEMENT AND NO CLAIM SHALL BE MADE BY THE LICENSOR, THE LICENSEE OR ANY OF THEIR AFFILIATES AGAINST PHOTOSHELTER OR ITS AFFILIATES FOR ANY LOSS, DAMAGE OR ANY DISPUTE RELATING TO THE LICENSED MATERIAL (AS DEFINED BELOW) AND THE LICENSOR AND THE LICENSEE WAIVE ANY AND ALL CLAIMS AND CAUSES OF ACTIONS AGAINST PHOTOSHELTER TO THE FULLY EXTENT PERMITTED UNDER LAW. THE LICENSOR AND LICENSEE HEREBY AGREE TO JOINTLY AND SEVERALLY INDEMNIFY PHOTOSHELTER AGAINST ANY CLAIM, DAMAGE, EXPENSE OR OTHER LOSS INCURRED BY PHOTOSHELTER AND ITS AFFILIATES AS A RESULT OF OR IN CONNECTION WITH THIS AGREEMENT AND THE MATTERS REFERENCED HEREIN.
 
-1. Definitions. In this Agreement the following definitions apply:
+1 Definitions. In this Agreement the following definitions apply:
 
 1.1 “Invoice” means the computer-generated or pre-printed invoice provided by or through the Site that may include, without limitation, names of the Licensor and Licensee, the permitted scope of use of the Licensed Material selected and the corresponding price for the license of such Licensed Material.
 
@@ -103,7 +103,7 @@ THIS IS A LEGAL AGREEMENT BETWEEN THE LICENSEE (AS DEFINED BELOW) AND THE LICENS
 
 1.6 “User” means any employee or subcontractor of the Licensee who manipulates, edits, or modifies the original digital file containing the Licensed Material or incorporates the Licensed Material within any derivative work.
 
-2. Grant of Rights. Subject to the terms of this Agreement:
+2 Grant of Rights. Subject to the terms of this Agreement:
 
 2.1 Licensee has the non-exclusive, non-transferable, non-sublicensable right to Reproduce the Licensed Material identified in the Invoice an unlimited number of times in any and all media for the following purposes (together the “Permitted Uses”):
 
@@ -123,7 +123,7 @@ THIS IS A LEGAL AGREEMENT BETWEEN THE LICENSEE (AS DEFINED BELOW) AND THE LICENS
 
 2.4 Licensee’s rights to the Licensed Material are worldwide and perpetual.
 
-3. Restrictions.
+3 Restrictions.
 
 3.1 Licensee may store the Licensed Material in a digital library, network configuration or similar arrangement to allow the Licensed Material to be viewed by employees, partners and clients of Licensee, but under no circumstance may the Licensed Material ever be used by more than 10 Users unless otherwise provided in writing by the Licensor.
 
@@ -145,9 +145,9 @@ THIS IS A LEGAL AGREEMENT BETWEEN THE LICENSEE (AS DEFINED BELOW) AND THE LICENS
 
 3.10 If any Licensed Material is Reproduced in an editorial manner, Licensor’s name or, such other credit information, if any, provided in such Invoice, must appear adjacent to the Licensed Material in the credit line accompanying the Licensed Material.
 
-4. Copyright. No ownership or copyright in any Licensed Material shall pass to Licensee by the issuance of the license contained in this Agreement. Except as expressly stated in this Agreement, Licensor grants Licensee no right or license, express or implied, to the Licensed Material.
+4 Copyright. No ownership or copyright in any Licensed Material shall pass to Licensee by the issuance of the license contained in this Agreement. Except as expressly stated in this Agreement, Licensor grants Licensee no right or license, express or implied, to the Licensed Material.
 
-5. Warranty and Limitation of Liability.
+5 Warranty and Limitation of Liability.
 
 5.1 Licensor warrants that: (i) it has all necessary rights and authority to enter into and perform this Agreement; (ii) the Licensed Material will be free from defects in material and workmanship for 30 days from delivery (Licensee’s sole and exclusive remedy for a breach of this warranty being the replacement of the Licensed Material); and (iii) Licensee’s use of the Licensed Material in its original form, and when used in accordance with this Agreement and the Invoice, will not infringe on any copyright, moral right, trademark or other intellectual property right and will not violate any right of privacy or right of publicity.
 
@@ -155,7 +155,7 @@ THIS IS A LEGAL AGREEMENT BETWEEN THE LICENSEE (AS DEFINED BELOW) AND THE LICENS
 
 5.3 THE REPRESENTATIONS AND WARRANTIES MADE BY LICENSOR IN THIS AGREEMENT APPLY ONLY TO THE LICENSED MATERIAL AS DELIVERED BY LICENSOR AND WILL BE INVALID IF THE LICENSED MATERIAL IS USED BY LICENSEE IN ANY MANNER NOT SPECIFICALLY AUTHORIZED IN THIS AGREEMENT OR IF LICENSEE IS OTHERWISE IN BREACH OF THIS AGREEMENT.
 
-6. Indemnification.
+6 Indemnification.
 
 6.1 Provided Licensed Material is only used in accordance with this Agreement and Licensee is not otherwise in breach of this Agreement, Licensor shall defend, indemnify and hold Licensee harmless from all damages, liabilities and expenses (including reasonable attorneys’ fees and permitted and authorized costs), arising out of or connected with any actual or threatened lawsuit, claim or legal proceeding alleging that Licensor is in breach of its warranties given in section 4 above.
 
@@ -165,7 +165,7 @@ THE FOREGOING STATES LICENSOR’S ENTIRE INDEMNIFICATION OBLIGATION TO LICENSEE 
 
 6.3 The party seeking indemnification pursuant to this section 6 shall promptly notify the other party of such claim. At indemnifying party’s option, indemnifying party may assume the handling, settlement or defense of any claim or litigation, in which event indemnified party shall cooperate in the defense thereof. Indemnified party shall have the right to participate in such litigation, at its expense, through counsel selected by indemnified party. The indemnifying party will not be liable for legal fees or other costs incurred prior to the other party giving notice of the claim for which indemnity is sought.
 
-7. Termination and Revocation.
+7 Termination and Revocation.
 
 7.1 The license contained in this Agreement will terminate automatically without notice from Licensor if Licensee fails to comply with any provision of this Agreement. Upon termination, Licensee must immediately (i) stop using the Licensed Material; (ii) destroy or, upon the request of Licensor, return the Licensed Material to Licensor; and (iii) delete or remove the Licensed Material from Licensee’s premises, computer systems and storage (electronic or physical).
 
@@ -173,7 +173,7 @@ THE FOREGOING STATES LICENSOR’S ENTIRE INDEMNIFICATION OBLIGATION TO LICENSEE 
 
 8 Condition of Licensed Material. Licensee should examine all Licensed Material for possible defects (whether digital or otherwise) before sending any Licensed Material for Reproduction. Without prejudice to section 5.1, Licensor shall not be liable for any loss or damage suffered by Licensee or any third party, whether directly or indirectly, arising from any alleged or actual defect in any Licensed Material or its caption or in any way from its Reproduction.
 
-9. Miscellaneous Terms.
+Miscellaneous Terms.
 
 9.1 Unauthorized Use. Any use of Licensed Material in a manner not expressly authorized by this Agreement or in breach of a term of this Agreement constitutes copyright infringement, entitling Licensor to exercise all rights and remedies available to it under copyright laws around the world. Licensee shall be responsible for any damages resulting from any such copyright infringement, including any claims by a third party.
 
