@@ -64,6 +64,7 @@ a img {
   overflow-y: hidden;
   display: flex;
   grid-row-start: 2;
+  background-color: #cfcfcf;
 
   @media screen and (min-width: $large) {
     overflow-y: scroll;
