@@ -2,6 +2,7 @@
 <html lang="en" id="html" class="bg-gray-600">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Louietje</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,15 +17,28 @@
 </head>
 <body class="babyBackground text-gray-200">
 
-<div class="hidden" id="resume">
-    <button id="togglePageButtonWork" class="togglePageButton">
-        <i class="fa-solid fa-baby fa-3x"></i>
-    </button>
-    <div id="resumeWrapper" class="bg-grey-700 max-w-4xl flex items-center h-auto flex-wrap mx-auto my-32">
+<div 
+    id="resume"
+    class="flex flex-col h-screen hidden mt-5" 
+>
+    <div 
+        id="resumeWrapper" 
+        class="bg-grey-700 flex items-center h-auto flex-wrap
+                lg:mx-auto lg:max-w-4xl 
+                mx-0 max-w-screen"
+    >
     <!--Main Col-->
-    <div id="profile" class="w-full shadow-2xl bg-gray-900 opacity-75 mx-6 ">
-        <div class="relative top-0 right-0 h-12 w-18 p-4">
+    <main 
+    id="profile" 
+    class="w-full shadow-2xl bg-gray-900 opacity-75
+        lg:mx-6
+        mx-0"
+    >
+        <div class="relative top-0 right-0 h-12 w-18 p-4 flex flex-row justify-between">
             <button id="themeChanger" class="focus:outline-none">☀️</button>
+            <button id="togglePageButtonWork" class="focus:outline-none">
+                 <i class="fa-solid fa-baby fa-2x"></i>
+            </button>
         </div>
         <div class="p-4 md:p-12 text-center ">
             <!-- Pin to top right corner -->
@@ -124,14 +138,22 @@
                    data-tippy-content="@peterdebleye"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
+       
+    </main>
+    <footer class="p-4 md:p-12 text-center w-screen
+                    absolute bottom-0 left-0
+                    lg:static lg:bottom-auto lg:left-auto">
+            © Peter De Bleye 2025
+    </footer>
     </div>
 </div>
-
-</div>
 <div class="wrapper" id="photos">
-    <button id="togglePageButtonBaby" class="togglePageButton">
-        <i class="fa-solid fa-toolbox fa-3x"></i>
+    <div class="togglePageWrapper">
+        <button id="togglePageButtonBaby" class="togglePageButton">
+        <i class="fa-solid fa-toolbox fa-2x"></i>
     </button>
+    </div>
+
     <nav class="lil-nav">
         <a href="#image-0"><img class="lil-nav__img" src="/images/photos/DM5A9632.JPG" alt="Louie 0" /></a>
 
